@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const textWithSpans = textContent.replace(/(\S)/g, '<span>$1</span>');
     element.innerHTML = textWithSpans;
   };
+  
 
   const applyTypingEffect = (selector, delayPerChar = 50) => {
     const targets = document.querySelectorAll(selector);
