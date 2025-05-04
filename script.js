@@ -34,6 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  anime({
+  targets: '.flex.flex-wrap a',
+  opacity: [0, 1],
+  translateY: [30, 0],
+  delay: anime.stagger(150, { start: 1500 }),
+  duration: 800,
+  easing: 'easeOutExpo'
+});
+
 
   anime({
     targets: '.flex-1',
